@@ -8,7 +8,6 @@
 </head>
 <body>
     <h1>Cadastro de Matérias Estudadas</h1>
-    
 
     <div class="form-container">
         <label for="categoria">Categoria:</label>
@@ -16,7 +15,6 @@
             <option value="Informática">Informática</option>
             <option value="Inglês">Inglês</option>
             <option value="Ciências Humanas">Ciências Humanas</option>
-            
         </select>
         
         <label for="materia">Matéria:</label>
@@ -28,13 +26,12 @@
         <label for="dia">Dia:</label>
         <input type="date" id="dia">
         
-        <button onclick="cadastrarMateria()">Cadastrar</button>
+        <button onclick="adicionarMateria()">Cadastrar</button>
     </div>
-    
-  
+
     <h2>Matérias Cadastradas</h2>
-    <ul id="lista-materias"></ul>
-    
+    <div id="lista-materias"></div>
+
     <script src="script.js"></script>
 </body>
 </html>
