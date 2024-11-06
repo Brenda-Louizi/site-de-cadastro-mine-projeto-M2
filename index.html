@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Matérias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cadastro de Matérias Estudadas</h1>
+    
+
+    <div class="form-container">
+        <label for="categoria">Categoria:</label>
+        <select id="categoria">
+            <option value="Informática">Informática</option>
+            <option value="Inglês">Inglês</option>
+            <option value="Ciências Humanas">Ciências Humanas</option>
+            
+        </select>
+        
+        <label for="materia">Matéria:</label>
+        <input type="text" id="materia" placeholder="Ex: Excel">
+        
+        <label for="duracao">Duração (minutos):</label>
+        <input type="number" id="duracao" placeholder="Ex: 60">
+        
+        <label for="dia">Dia:</label>
+        <input type="date" id="dia">
+        
+        <button onclick="cadastrarMateria()">Cadastrar</button>
+    </div>
+    
+  
+    <h2>Matérias Cadastradas</h2>
+    <ul id="lista-materias"></ul>
+    
+    <script src="script.js"></script>
+</body>
+</html>
